@@ -9,7 +9,7 @@ function ReadFile() {
 
 function CleanArray() {
     for (var n = 0; n < names.length; n++) {
-        if (names[n] == "") { names = names.splice(n, 1); }
+        if (names[n] == "\r") { names = names.splice(n, 1); }
     }
 }
 
