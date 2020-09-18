@@ -4,6 +4,13 @@ var names = ['GG#4', 'Sour Diesel', 'Legends']
 ReadFile();
 function ReadFile() {
     fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); console.log(n); })
+    CleanArray();
+}
+
+function CleanArray() {
+    for (var n = 0; n < names.length; n++) {
+        if (names[n] == "") { names = names.splice(n, 1); }
+    }
 }
 
 
