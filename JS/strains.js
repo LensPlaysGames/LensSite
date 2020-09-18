@@ -3,7 +3,7 @@ var names = ['GG#4', 'Sour Diesel', 'Legends']
 
 ReadFile();
 function ReadFile() {
-    fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\\r"); console.log(n); })
+    fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); console.log(n); })
 }
 
 
