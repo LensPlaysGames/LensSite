@@ -71,6 +71,57 @@
 
 
 
+.button {
+    background-color: #424242;
+    border: 3px inset #222222;
+    color: white;
+    font-weight: bold;
+    text-align: start;
+    display: inline-block;
+}
+
+    .button:hover {
+        max-width: 81%;
+    }
+
+.buttonnoresize {
+    background-color: #424242;
+    border: 3px inset #222222;
+    color: white;
+    font-weight: normal;
+    text-align: start;
+    display: inline-block;
+}
+
+    .buttonnoresize:hover {
+        filter: invert();
+    }
+
+body {
+    background-color: #242424;
+    color: white;
+}
+
+section {
+    font-family: Consolas;
+}
+
+div {
+    font-family: Consolas;
+}
+
+form {
+    font-family: Consolas;
+}
+
+/* HYPERLINK */
+a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+
+
 .txtcenter {
     text-align: center;
 }
@@ -216,61 +267,4 @@
 
 .right {
     float: right;
-}
-
-
-
-.button {
-    background-color: #424242;
-    border: 3px inset #222222;
-    color: white;
-    font-weight: bold;
-    text-align: start;
-    display: inline-block;
-}
-
-    .button:hover {
-        max-width: 81%;
-    }
-
-.buttonnoresize {
-    background-color: #424242;
-    border: 3px inset #222222;
-    color: white;
-    font-weight: normal;
-    text-align: start;
-    display: inline-block;
-}
-
-    .buttonnoresize:hover {
-        filter: invert();
-    }
-
-.contactfield {
-    float: right;
-    margin: 6px 2px 6px 30px;
-}
-
-
-body {
-    background-color: #242424;
-    color: white;
-}
-
-section {
-    font-family: Consolas;
-}
-
-div {
-    font-family: Consolas;
-}
-
-form {
-    font-family: Consolas;
-}
-
-/* HYPERLINK */
-a {
-    color: deepskyblue;
-    text-decoration: none;
 }

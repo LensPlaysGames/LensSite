@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Language of Lens</title>
+		<link rel="stylesheet" href="CSS/StyleSheet1.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="div_header" class="head">
+			<div class="flexrow medpadding" style="justify-content: space-between;">
+				<span>~Lens~</span>
+				<small>
+					<span id="time" class="txtsml" style="font-weight: normal;"></span>
+				</small>
+			</div>
+		</div>
+
+		<div class="flexrow">
+			<div id="div_sidebar" class="sidebar">
+				<h4 id="sidebarhead" class="nomar nopadding" style="height: 27px"></h4>
+				<form class="flexcolumn">
+					<input
+						type="submit"
+						formaction="index.html"
+						name="sub_page1"
+						id="sub_page1"
+						value="Home Page"
+						alt="Home"
+						class="sidebarselection button" />
+					<input
+						type="submit"
+						formaction="StrainNameGenerator.html"
+						name="sub_page2"
+						id="sub_page2"
+						value="Strain Generation"
+						alt="Strains"
+						class="sidebarselection button" />
+					<input
+						type="submit"
+						formaction="contact.html"
+						name="sub_page3"
+						id="sub_page3"
+						value="Contact Me"
+						alt="Contact"
+						class="sidebarselection button" />
+					<input
+						type="submit"
+						formaction="about.html"
+						name="sub_page4"
+						id="sub_page4"
+						value="About Me"
+						alt="About"
+						class="sidebarselection button" />
+				</form>
+			</div>
+
+			<div id="div_content" class="content flexrow">
+				<div class="contentcont">
+					<div id="randomimg"></div>
+					<span id="txt_randompic" class="txtcenter" style="padding-top: 18px;">Random Picture!</span>
+				</div>
+				<div class="contenttxt wide27">
+					<h1><cite>Lens Sipsum</cite></h1>
+					<span class="txtindent hugepadding notoppadding">And Thy was Made. <br /><br />
+					In the flash of A past, all the smoke I was hiding behind fell out of the air into a dust that coated the ground an inch at a time <br /><br />
+					If I could see the end I would choose it. Why? <br /><br />
+					Maybe the work ain't worth the payout <br /><br />
+					Maybe the couch ain't catch your ass now <br /><br />
+					Maybe thy house drives crazy in his brain now <br /><br />
+					Maybe the life will drain from thee any day now</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="div_footer" class="foot flexrow">
+			<div class="footconts" style="font-weight: bold">
+				&#169; RYLAN ~LENS~ KELLOGG
+				<span>2020</span>
+			</div>
+		</div>
+
+		<script src="JS/header.js"></script>
+		<script src="JS/sidebar.js"></script>
+		<script src="JS/index.js"></script>
+	</body>
+
+</html>
