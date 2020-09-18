@@ -1,0 +1,276 @@
+﻿.head {
+    height: 9%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: 9px inset lightgray;
+}
+
+.sidebar {
+    width: 9%;
+    display: flex;
+    flex-direction: column;
+    border: 9px inset;
+    padding: 6px 6px 6px 6px;
+}
+
+.sidebarselection {
+    display: flex;
+    flex-direction: column;
+    height: 36px;
+    padding: 0px 18px 0px 6px;
+    margin: 3px 6px 1px 6px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.content {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    border: 6px inset;
+    word-wrap: hyphenate;
+}
+
+.contentcont {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border: 6px dashed #404040;
+    word-wrap: break-word;
+}
+
+.contenttxt {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 18px 18px 18px;
+    border: 6px dashed #404040;
+    width: 18%;
+    word-wrap: break-word;
+}
+
+.foot {
+    height: 9%;
+    display: flex;
+    flex-direction: row;
+    background-color: #0f0f0f;
+    border: 6px solid lightgray;
+    clear: both;
+}
+
+.footconts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6px 6px 6px 6px;
+    margin: auto;
+}
+
+
+
+.txtcenter {
+    text-align: center;
+}
+
+
+
+.wide100 {
+    width: 100%;
+}
+
+.wide54 {
+    width: 54%;
+}
+
+.wide36 {
+    width: 36%;
+}
+
+.wide27 {
+    width: 27%;
+}
+
+.wide18 {
+    width: 18%;
+}
+
+.wide9 {
+    width: 9%;
+}
+
+
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.automar {
+    margin: auto;
+}
+
+.medmar {
+    margin: 6px;
+}
+
+.nomar {
+    margin: 0px;
+}
+
+
+
+.txthuge {
+    font-size: xx-large;
+}
+
+.txtxlrg {
+    font-size: x-large;
+}
+
+.txtsml {
+    font-size: smaller;
+}
+
+.txtleft {
+    text-align: left;
+}
+
+.txtright {
+    text-align: right;
+}
+
+.txtindent {
+    text-indent: -4em;
+    padding: 72px;
+    padding-top: 0px;
+}
+
+.txtnoindent {
+    text-indent: 0;
+}
+
+
+.hugepadding {
+    padding: 72px;
+}
+
+.xlrgpadding {
+    padding: 45px;
+}
+
+.lrgpadding {
+    padding: 18px;
+}
+
+.medpadding {
+    padding: 6px;
+}
+
+.nopadding {
+    padding: 0px;
+}
+
+.notoppadding {
+    padding-top: 0px;
+}
+
+.nobtmpadding {
+    padding-bottom: 0px;
+}
+
+
+.overlay {
+    position: fixed;
+}
+
+
+
+.noborder {
+    border: none;
+}
+
+
+
+.greenbg {
+    background-color: #4fad7f;
+}
+
+.pinkbg {
+    background-color: #b05280;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+.button {
+    background-color: #424242;
+    border: 3px inset #222222;
+    color: white;
+    font-weight: bold;
+    text-align: start;
+    display: inline-block;
+}
+
+    .button:hover {
+        max-width: 81%;
+    }
+
+.buttonnoresize {
+    background-color: #424242;
+    border: 3px inset #222222;
+    color: white;
+    font-weight: normal;
+    text-align: start;
+    display: inline-block;
+}
+
+    .buttonnoresize:hover {
+        filter: invert();
+    }
+
+.contactfield {
+    float: right;
+    margin: 6px 2px 6px 30px;
+}
+
+
+body {
+    background-color: #242424;
+    color: white;
+}
+
+section {
+    font-family: Consolas;
+}
+
+div {
+    font-family: Consolas;
+}
+
+form {
+    font-family: Consolas;
+}
+
+/* HYPERLINK */
+a {
+    color: deepskyblue;
+    text-decoration: none;
+}
