@@ -3,7 +3,7 @@
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
-    border: 9px inset lightgray;
+    border: 12px outset;
 }
 
 .sidebar {
@@ -24,13 +24,23 @@
     font-weight: bold;
 }
 
+.sidebarnav {
+    font-size: 18px;
+    height: 27px;
+    padding: 9px 9px 9px 3px;
+    margin: -6px -6px 6px -6px;
+    border: 9px inset;
+    text-align: center;
+}
+
 .content {
     float: left;
     display: flex;
     flex-direction: column;
     padding: 0px;
-    border: 6px inset;
+    border: 9px outset;
     word-wrap: hyphenate;
+    width: 100%;
 }
 
 .contentcont {
@@ -38,7 +48,7 @@
     display: flex;
     flex-direction: column;
     padding: 18px;
-    border: 6px dashed #404040;
+    border: 6px dashed #939393;
     word-wrap: break-word;
     max-width: 720px;
 }
@@ -48,7 +58,7 @@
     display: flex;
     flex-direction: column;
     padding: 0px 18px 18px 18px;
-    border: 6px dashed #404040;
+    border: 6px dashed #939393;
     width: 18%;
     word-wrap: break-word;
     max-width: 720px;
@@ -59,7 +69,7 @@
     display: flex;
     flex-direction: row;
     background-color: #0f0f0f;
-    border: 6px solid lightgray;
+    border: 6px outset;
     clear: both;
 }
 
@@ -75,7 +85,7 @@
 
 .button {
     background-color: #424242;
-    border: 3px inset #222222;
+    border: 3px inset #939393;
     color: white;
     font-weight: bold;
     text-align: start;
@@ -88,7 +98,7 @@
 
 .buttonnoresize {
     background-color: #424242;
-    border: 3px inset #222222;
+    border: 3px inset #939393;
     color: white;
     font-weight: normal;
     text-align: start;
@@ -125,8 +135,8 @@ a {
 
 
 .imgkeepaspect {
-    max-width: 640px;
-    max-height: 640px;
+    max-width: 480px;
+    max-height: 480px;
     width: auto;
     height: auto;
 }

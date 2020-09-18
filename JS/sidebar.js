@@ -6,8 +6,10 @@
     sidebarhead.html(defaultsidebarheadtext);
 
     $(".sidebarselection").hover(function () {
-        sidebarhead.text(presidebarheadtext + $(this).prop("alt"));
+        sidebarhead.text($(this).prop("alt"));
+        sidebarhead.css("font-size", "24px");
     }, function () {
         sidebarhead.text(defaultsidebarheadtext);
+        sidebarhead.css("font-size", "18px");
     });
 });

@@ -8,23 +8,19 @@
 		<script>
 			$(function () {
 				$("#div_sidebar").load("Sidebar.html");
+                $("#div_header").load("Header.html");
 			});
 		</script>
 	</head>
 
 	<body>
-		<div id="div_header" class="head">
-			<div class="flexrow medpadding" style="justify-content: space-between;">
-				<span>~Lens~</span>
-				<small><span id="time" class="txtsml" style="font-weight: normal;"></span></small>
-		</div>
-	</div>
+		<div id="div_header" class="head"></div>
 
 	<div class="flexrow">
 		<div id="div_sidebar" class="sidebar"></div>
 
 		<div id="div_content" class="content flexrow">
-			<div class="content">
+			<div class="contentcont">
 				<form name="Generation Buttons">
 					<input
 						type="button"
@@ -43,7 +39,10 @@
 						style="height: 90px;" />
 				</form>
 			</div>
-			<div id="strainname" class="contenttxt lrgpadding txthuge wide100"></div>
+			<div class="contentcont lrgpadding txthuge">
+				<div id="strainname" class="wide100"></div>
+				<div id="strainimg"></div>
+			</div>
 		</div>
 	</div>
 
@@ -55,7 +54,6 @@
 	</div>
 
 	<script src="JS/header.js"></script>
-	<script src="JS/sidebar.js"></script>
 	<script src="JS/strains.js"></script>
 </body>
 </html>

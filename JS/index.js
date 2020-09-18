@@ -16,10 +16,15 @@
 
         $.getJSON('http://www.reddit.com/r/' + subreddit + '.json?jsonp=?&show=all&limit=25', function (data) {
             $.each(data.data.children, function (i, item) {
+
                 if (i == aRandomNum) {
-                    console.log(item.data.url);
-                    imgcontainer.html($("<img>", { src: item.data.url, class: 'imgkeepaspect' }));
-                    return false;
+                    if (item.data.post_hint == "image") {
+                        console.log(item.data);
+                        imgcontainer.html($("<img>", { src: item.data.url, class: 'imgkeepaspect' }));
+                        return false;
+                    } else {
+                        GetRandRedditImage(subreddit);
+                    }
                 }
             });
         });
