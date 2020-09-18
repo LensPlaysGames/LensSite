@@ -1,25 +1,27 @@
 ﻿$(function () {
-    SetRandomImgHTML();
+    GetRandRedditImage("Pic");
 
     $("#txt_randompic").click(function () {
-        SetRandomImgHTML();
+        GetRandRedditImage("Pic");
     });
     $("#randomimg").click(function () {
-        SetRandomImgHTML();
+        GetRandRedditImage("Pic");
     });
+
+
+
+    function GetRandRedditImage(subreddit) {
+        var imgcontainer = $("#randomimg");
+        var aRandomNum = Math.floor((Math.random() * 25) + 1);
+
+        $.getJSON('http://www.reddit.com/r/' + subreddit + '.json?jsonp=?&show=all&limit=25', function (data) {
+            $.each(data.data.children, function (i, item) {
+                if (i == aRandomNum) {
+                    console.log(item.data.url);
+                    imgcontainer.html($("<img>", { src: item.data.url, class: 'imgkeepaspect' }));
+                    return false;
+                }
+            });
+        });
+    }
 });
-
-function SetRandomImgHTML() {
-    $("#randomimg").html(GetRandomImageLoremflickr());
-}
-
-function GetRandomImageLoremflickr() {
-    var width = 180 + (Math.floor(Math.random() * 300));
-    var height = 180 + (Math.floor(Math.random() * 300));
-    var url = "http://loremflickr.com/" + width + "/" + height;
-
-    var img = "<img src='";
-    img += url;
-    img += "' width='" + width + "' height='" + height + "' />";
-    return img;
-}

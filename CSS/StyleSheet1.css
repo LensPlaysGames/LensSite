@@ -40,6 +40,7 @@
     padding: 18px;
     border: 6px dashed #404040;
     word-wrap: break-word;
+    max-width: 720px;
 }
 
 .contenttxt {
@@ -50,6 +51,7 @@
     border: 6px dashed #404040;
     width: 18%;
     word-wrap: break-word;
+    max-width: 720px;
 }
 
 .foot {
@@ -118,6 +120,15 @@ form {
 a {
     color: deepskyblue;
     text-decoration: none;
+}
+
+
+
+.imgkeepaspect {
+    max-width: 640px;
+    max-height: 640px;
+    width: auto;
+    height: auto;
 }
 
 

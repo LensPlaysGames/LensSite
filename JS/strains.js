@@ -13,14 +13,30 @@ $(function () {
 
     $("#btn_generatestrain").click(function () {
         nametext.html(function () {
+            GetRandRedditImage("WeedPics");
             var name = GenerateName()
-            return name + GetRandomImageLoremflickr();
+            return name;
         });
     });
 
     $("#btn_liststrains").click(function () {
         nametext.html(HTMLListFromNames());
     });
+
+    function GetRandRedditImage(subreddit) {
+        var imgcontainer = nametext;
+        var aRandomNum = Math.floor((Math.random() * 25) + 1);
+
+        $.getJSON('http://www.reddit.com/r/' + subreddit + '.json?jsonp=?&show=all&limit=25', function (data) {
+            $.each(data.data.children, function (i, item) {
+                if (i == aRandomNum) {
+                    console.log(item.data.url);
+                    imgcontainer.append($("<img>", { src: item.data.url, class: 'imgkeepaspect' }));
+                    return false;
+                }
+            });
+        });
+    }
 });
 
 //JavaScript
@@ -51,15 +67,4 @@ function HTMLListFromNames() {
     }
     r += "</ul></small>";
     return r;
-}
-
-function GetRandomImageLoremflickr() {
-    var width = 180 + (Math.floor(Math.random() * 300));
-    var height = 180 + (Math.floor(Math.random() * 300));
-    var url = "http://loremflickr.com/" + width + "/" + height + "/" + "cannabis";
-
-    var img = "<img src='";
-    img += url;
-    img += "' width='" + width + "' height='" + height + "' />";
-    return img;
 }
