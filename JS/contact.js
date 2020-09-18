@@ -1,4 +1,6 @@
 ﻿$(function () {
+    $("#div_sidebar").load("Sidebar.html");
+
     var select = $("#slc_topic");
     var dfl_slc_visual = "Topic: ";
     var selectionvisual = $("#lbl_topic");

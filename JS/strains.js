@@ -14,7 +14,7 @@ $(function () {
     $("#btn_generatestrain").click(function () {
         nametext.html(function () {
             var name = GenerateName()
-            return name + GetRandomImageLoremflickr("cannabis");
+            return name + GetRandomImageLoremflickr();
         });
     });
 
@@ -22,7 +22,6 @@ $(function () {
         nametext.html(HTMLListFromNames());
     });
 });
-
 
 //JavaScript
 function GenerateName() {
@@ -54,14 +53,13 @@ function HTMLListFromNames() {
     return r;
 }
 
-function GetRandomImageLoremflickr(topic) {
-    var img = "<img src='";
-
+function GetRandomImageLoremflickr() {
     var width = 180 + (Math.floor(Math.random() * 300));
     var height = 180 + (Math.floor(Math.random() * 300));
-    var url = "http://loremflickr.com/" + width + "/" + height + "/" + topic;
+    var url = "http://loremflickr.com/" + width + "/" + height + "/" + "cannabis";
 
+    var img = "<img src='";
     img += url;
-    img += "' />";
+    img += "' width='" + width + "' height='" + height + "' />";
     return img;
 }
