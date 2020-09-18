@@ -4,13 +4,6 @@ var names = ['GG#4', 'Sour Diesel', 'Legends']
 ReadFile();
 function ReadFile() {
     fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); console.log(n); })
-    CleanArray();
-}
-
-function CleanArray() {
-    for (var n = 0; n < names.length; n++) {
-        if (names[n] == "\r") { names = names.splice(n, 1); }
-    }
 }
 
 
@@ -20,7 +13,8 @@ $(function () {
 
     $("#btn_generatestrain").click(function () {
         nametext.html(function () {
-            return GenerateName() + GetRandomImageLoremflickr("cannabis");
+            var name = GenerateName()
+            return name + GetRandomImageLoremflickr("cannabis");
         });
     });
 
