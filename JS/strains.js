@@ -75,7 +75,7 @@ function HTMLListFromArray(array) {
     var r = "<small>" + array.length + " Strains Found";
     r += "<ul>";
     for (var n = 0; n < array.length; n++) {
-        r += "<li>" + array[n] + "</li>";
+        r += "<li style='list-style-type: none; text-align: left;'>" + array[n] + "</li>";
     }
     r += "</ul></small>";
     return r;
