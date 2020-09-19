@@ -45,6 +45,7 @@
 }
 
 .contentcont {
+    width: 100%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -54,6 +55,7 @@
 }
 
 .contenttxt {
+    width: 100%;
     float: left;
     display: flex;
     flex-direction: column;

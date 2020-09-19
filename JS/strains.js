@@ -3,7 +3,7 @@ var names = ['GG#4', 'Sour Diesel', 'Legends'];
 
 ReadFile();
 function ReadFile() {
-    fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); console.log(n); })
+    fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); })
 }
 
 
@@ -62,7 +62,7 @@ function GenerateName() {
 
     // 50% chance to add another name before current name
     var randprime = Math.floor((Math.random() * names.length * 2) - names.length);
-    if (randprime >= 0) { name = names[randprime] + name; }
+    if (randprime >= 0) { name = names[randprime] + " " + name; }
 
     // Prevent name from being too long
     if (name.includes(" x ")) { if (name.length > 45) { var split = name.split(" x "); name = split[0]; } }
