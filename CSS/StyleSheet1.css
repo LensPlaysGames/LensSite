@@ -1,7 +1,5 @@
 ﻿.head {
-    min-height: 45px;
-    width: 100%;
-    height: 9%;
+    height: 45px;
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
@@ -37,13 +35,13 @@
 }
 
 .content {
+    width: 100%;
     float: left;
     display: flex;
     flex-direction: column;
     padding: 0px;
     border: 9px outset;
     word-wrap: hyphenate;
-    width: 100%;
 }
 
 .contentcont {
@@ -54,7 +52,6 @@
     border: 6px dashed #939393;
     word-wrap: break-word;
     min-width: 270px;
-    max-width: 720px;
 }
 
 .contenttxt {
@@ -63,13 +60,11 @@
     flex-direction: column;
     padding: 0px 18px 18px 18px;
     border: 6px dashed #939393;
-    width: 18%;
     word-wrap: break-word;
     min-width: 480px;
 }
 
 .foot {
-    width: 100%;
     height: 9%;
     display: flex;
     flex-direction: row;
