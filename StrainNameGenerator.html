@@ -11,17 +11,10 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(function () {
-            $("#div_header").load("Header.html");  // REQUIRES <div id="div_header" class="head"></div> in HTML
-            $("#div_sidebar").load("Sidebar.html"); // REQUIRES <div id="div_sidebar" class="sidebar"></div> in HTML
-		});
-	</script>
 </head>
 
-	<body>
-		<div id="div_header" class="head"></div>
+<body>
+	<div id="div_header" class="head"></div>
 
 	<div class="flexrow">
 		<div id="div_sidebar" class="sidebar"></div>
@@ -29,21 +22,19 @@
 		<div id="div_content" class="content flexrow">
 			<div class="contentcont wide54">
 				<form name="Generation Buttons">
-					<input
-						type="button"
-						name="btn_generatestrain"
-						id="btn_generatestrain"
-						value="Generate New Strain"
-						class="buttonnoresize wide100 txtxlrg"
-						style="height: 90px;" />
+					<input type="button"
+						   name="btn_generatestrain"
+						   id="btn_generatestrain"
+						   value="Generate New Strain"
+						   class="buttonnoresize wide100 txtxlrg"
+						   style="height: 90px;" />
 					<br />
-					<input
-						type="button"
-						name="btn_liststrains"
-						id="btn_liststrains"
-						value="List All Strain Names"
-						class="buttonnoresize wide100 txtxlrg"
-						style="height: 90px;" />
+					<input type="button"
+						   name="btn_liststrains"
+						   id="btn_liststrains"
+						   value="List All Strain Names"
+						   class="buttonnoresize wide100 txtxlrg"
+						   style="height: 90px;" />
 				</form>
 			</div>
 			<div class="contentcont lrgpadding txtcenter txthuge">
@@ -60,7 +51,13 @@
 		</div>
 	</div>
 
-	<script src="JS/header.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#div_header").load("Header.html");  // REQUIRES <div id="div_header" class="head"></div> in HTML
+			$("#div_sidebar").load("Sidebar.html"); // REQUIRES <div id="div_sidebar" class="sidebar"></div> in HTML
+		});
+	</script>
 	<script src="JS/strains.js"></script>
 </body>
 </html>
