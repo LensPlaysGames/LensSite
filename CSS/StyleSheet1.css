@@ -35,6 +35,7 @@
 }
 
 .content {
+    width: 100%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -50,7 +51,6 @@
     padding: 18px;
     border: 6px dashed #939393;
     word-wrap: break-word;
-    min-width: 270px;
 }
 
 .contenttxt {
@@ -60,7 +60,6 @@
     padding: 0px 18px 18px 18px;
     border: 6px dashed #939393;
     word-wrap: break-word;
-    min-width: 480px;
 }
 
 .foot {
@@ -134,11 +133,7 @@ a {
 
 
 .imgkeepaspect {
-    min-width: 120px;
     max-width: 480px;
-    min-height: 120px;
-    max-height: 480px;
-    width: auto;
     height: auto;
 }
 
