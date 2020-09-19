@@ -12,12 +12,12 @@ $(function () {
     var nametext = $("#strainname");
     var image = $("#strainimg");
 
-    nametext.html(function () { GetRandRedditImage("WeedPics"); return GenerateName(); });
+    nametext.html(function () { GetRandRedditImage("highrestrees"); return GenerateName(); });
 
     $("#btn_generatestrain").click(function () {
         image.show();
         nametext.html(function () {
-            GetRandRedditImage("WeedPics");
+            GetRandRedditImage("highrestrees");
             return GenerateName();
         });
     });

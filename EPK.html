@@ -14,8 +14,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$(function () {
-			$("#div_sidebar").load("Sidebar.html");
-			$("#div_header").load("Header.html");
+            $("#div_header").load("Header.html");  // REQUIRES <div id="div_header" class="head"></div> in HTML
+            $("#div_sidebar").load("Sidebar.html"); // REQUIRES <div id="div_sidebar" class="sidebar"></div> in HTML
 		});
 	</script>
 </head>
@@ -28,9 +28,9 @@
 
 			<div id="div_content" class="content flexrow">
 
-				<div class="contentcont wide27">
+				<div class="contentcont">
 					<h1 class="bottommar"><cite>Lens</cite></h1>
-					<span class="txtindent hugepadding notoppadding">
+					<span class="txtindent">
 						I make music <br /><br />
 						I've been through some shit, but that doesn't matter. <br /><br />
 						What matters is <strong>what lies ahead</strong>
@@ -49,19 +49,19 @@
 					<div class="flexcolumn">
 						<ul><li><h4 class="bottommar"><cite>Upcoming Album</cite></h4></li></ul>
 						<div>
-							<span class="contenttxt noborder"><strong>FUN</strong><br />unreleased</span>
+							<span class="contenttxt noborder" style="min-width: 120px;"><strong>FUN</strong><br />unreleased</span>
 							<audio src="audio/FUNfullmix.wav" controls></audio>
 						</div>
 						<div>
-							<span class="contenttxt noborder"><strong>newBEGINnings</strong><br />snippet</span>
+							<span class="contenttxt noborder" style="min-width: 120px;"><strong>newBEGINnings</strong><br />snippet</span>
 							<audio src="audio/newBEGINnings.wav" controls></audio>
 						</div>
 						<div>
-							<span class="contenttxt noborder"><strong>Just A Plug</strong><br />unreleased</span>
+							<span class="contenttxt noborder" style="min-width: 120px;"><strong>Just A Plug</strong><br />unreleased</span>
 							<audio src="audio/JustAPlugVocalsMix.wav" controls></audio>
 						</div>
 						<div>
-							<span class="contenttxt noborder"><strong>unnamed</strong><br />unreleased</span>
+							<span class="contenttxt noborder" style="min-width: 120px;"><strong>unnamed</strong><br />unreleased</span>
 							<audio src="audio/YouKnowmix.wav" controls></audio>
 						</div>
 					</div>

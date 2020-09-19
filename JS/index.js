@@ -1,11 +1,11 @@
 ﻿$(function () {
-    GetRandRedditImage("Pic");
+    GetRandRedditImage("EarthPorn");
 
     $("#txt_randompic").click(function () {
-        GetRandRedditImage("Pic");
+        GetRandRedditImage("EarthPorn");
     });
     $("#randomimg").click(function () {
-        GetRandRedditImage("Pic");
+        GetRandRedditImage("EarthPorn");
     });
 
 

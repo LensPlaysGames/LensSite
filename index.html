@@ -14,8 +14,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$(function () {
-			$("#div_sidebar").load("Sidebar.html");
-			$("#div_header").load("Header.html");
+            $("#div_header").load("Header.html");  // REQUIRES <div id="div_header" class="head"></div> in HTML
+            $("#div_sidebar").load("Sidebar.html"); // REQUIRES <div id="div_sidebar" class="sidebar"></div> in HTML
 		});
 	</script>
 </head>
@@ -31,7 +31,7 @@
 					<div id="randomimg"></div>
 					<span id="txt_randompic" class="txtcenter" style="padding-top: 18px;">Click for Random Picture!</span>
 				</div>
-				<div class="contenttxt wide100">
+				<div class="contenttxt">
 					<h1><cite>Lens Sipsum</cite></h1>
 					<span class="txtindent hugepadding notoppadding">And Thy was Made. <br /><br />
 					In the flash of A past, all the smoke I was hiding behind fell out of the air into a dust that coated the ground an inch at a time <br /><br />
