@@ -8,7 +8,7 @@
 
 .sidebar {
     min-width: 172px;
-    width: 9%;
+    width: 9vw;
     display: flex;
     flex-direction: column;
     border: 9px inset;
@@ -63,7 +63,7 @@
 }
 
 .foot {
-    height: 9%;
+    height: 45px;
     display: flex;
     flex-direction: row;
     background-color: #0f0f0f;
@@ -88,6 +88,7 @@
     font-weight: bold;
     text-align: start;
     display: inline-block;
+    max-width: 100%;
 }
 
     .button:hover {
@@ -133,7 +134,7 @@ a {
 
 
 .imgkeepaspect {
-    max-width: 480px;
+    max-width: 18vmax;
     height: auto;
 }
 
