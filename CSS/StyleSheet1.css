@@ -61,6 +61,7 @@
     border: 6px dashed #939393;
     width: 18%;
     word-wrap: break-word;
+    min-width: 120px;
     max-width: 720px;
 }
 
@@ -143,12 +144,6 @@ a {
 
 
 
-.txtcenter {
-    text-align: center;
-}
-
-
-
 .wide100 {
     width: 100%;
 }
@@ -199,6 +194,17 @@ a {
     margin: 0px;
 }
 
+.bottommar {
+    margin: 0px 0px 18px 0px;
+}
+
+.medbtmmar {
+    margin: 0px 0px 36px 0px;
+}
+
+.lrgbtmmar {
+    margin: 0px 0px 54px 0px;
+}
 
 
 .txthuge {
@@ -209,8 +215,16 @@ a {
     font-size: x-large;
 }
 
+.txtlrg {
+    font-size: large;
+}
+
 .txtsml {
     font-size: smaller;
+}
+
+.txtcenter {
+    text-align: center;
 }
 
 .txtleft {
@@ -230,7 +244,6 @@ a {
 .txtnoindent {
     text-indent: 0;
 }
-
 
 .hugepadding {
     padding: 72px;
