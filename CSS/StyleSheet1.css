@@ -137,6 +137,9 @@ a {
     text-decoration: none;
 }
 
+audio {
+    min-width: 23vw;
+}
 
 
 .imgkeepaspect {
@@ -347,4 +350,15 @@ a {
 
 .right {
     float: right;
+}
+
+
+@media only screen and (max-aspect-ratio: 1) {
+    audio {
+        max-width: 13vw;
+    }
+
+    .imgkeepaspect {
+        max-width: 9vw;
+    }
 }
