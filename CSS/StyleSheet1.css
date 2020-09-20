@@ -52,6 +52,7 @@
 }
 
 .contentcont {
+    width: 100%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -61,6 +62,7 @@
 }
 
 .contenttxt {
+    width: 100%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -140,10 +142,6 @@ a {
 .imgkeepaspect {
     max-width: 18vmax;
     height: auto;
-}
-
-.nomaxwidth {
-    max-width: none;
 }
 
 .maxwidth {
