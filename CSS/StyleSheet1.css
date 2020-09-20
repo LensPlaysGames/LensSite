@@ -14,7 +14,6 @@
 }
 
 .sidebar {
-    min-width: 172px;
     width: 9vw;
     display: flex;
     flex-direction: column;
@@ -145,24 +144,28 @@ a {
     height: auto;
 }
 
+.maxwidth {
+    max-width: 100vw;
+}
+
 .lrgwidth {
-    max-width: 36vmax;
+    max-width: 36vw;
 }
 
 .nmlwidth {
-    max-width: 18vmax;
+    max-width: 18vw;
 }
 
 .smlmidwidth {
-    max-width: 13vmax;
+    max-width: 13vw;
 }
 
 .smlwidth {
-    max-width: 9vmax;
+    max-width: 9vw;
 }
 
 .tnywidth {
-    max-width: 3vmax;
+    max-width: 3vw;
 }
 
 
