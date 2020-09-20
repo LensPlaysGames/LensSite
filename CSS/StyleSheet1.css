@@ -1,4 +1,5 @@
 .head {
+    max-width: none;
     font-size: xx-large;
     font-weight: bolder;
     border: 12px outset #939393;
@@ -72,6 +73,7 @@
 }
 
 .foot {
+    max-width: none;
     height: 45px;
     display: flex;
     flex-direction: row;
