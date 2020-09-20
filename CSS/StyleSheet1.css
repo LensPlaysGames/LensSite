@@ -123,8 +123,6 @@
         filter: invert();
     }
 
-
-
 body {
     background-color: #242424;
     color: #eaeaea;
@@ -134,7 +132,7 @@ body {
 img {
     box-shadow: rgba(0, 0, 0, .4) 9px 9px 9px;
 }
-/* HYPERLINK */
+
 a {
     color: deepskyblue;
     text-decoration: none;
@@ -147,7 +145,50 @@ a {
     height: auto;
 }
 
+.lrgwidth {
+    max-width: 36vmax;
+}
 
+.nmlwidth {
+    max-width: 18vmax;
+}
+
+.smlmidwidth {
+    max-width: 13vmax;
+}
+
+.smlwidth {
+    max-width: 9vmax;
+}
+
+.tnywidth {
+    max-width: 3vmax;
+}
+
+
+
+.twocolumngridcontainer {
+    display: grid;
+    grid-gap: 3vh;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: auto;
+}
+
+.grid1strow {
+    grid-row: 1;
+}
+
+.grid2ndrow {
+    grid-row: 2;
+}
+
+.grid1stcolumn {
+    grid-column: 1;
+}
+
+.grid2ndcolumn {
+    grid-column: 2;
+}
 
 
 .noshadow {
@@ -206,6 +247,7 @@ a {
 .lrgbtmmar {
     margin: 0px 0px 54px 0px;
 }
+
 
 
 .txthuge {
