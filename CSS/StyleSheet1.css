@@ -361,8 +361,4 @@ audio {
     audio {
         max-width: 13vw;
     }
-
-    .imgkeepaspect {
-        max-width: 9vw;
-    }
 }
