@@ -354,6 +354,10 @@ audio {
 
 
 @media only screen and (max-aspect-ratio: 1) {
+    .sidebar {
+        width: 16vw;
+    }
+
     audio {
         max-width: 13vw;
     }
