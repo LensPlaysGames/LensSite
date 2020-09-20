@@ -44,7 +44,6 @@
 .content {
     max-width: 100%;
     width: 100%;
-    float: left;
     display: flex;
     flex-direction: column;
     padding: 0px;
@@ -55,7 +54,6 @@
 .contentcont {
     max-width: 100%;
     width: 100%;
-    float: left;
     display: flex;
     flex-direction: column;
     padding: 18px;
@@ -66,7 +64,6 @@
 .contenttxt {
     max-width: 100%;
     width: 100%;
-    float: left;
     display: flex;
     flex-direction: column;
     padding: 0px 18px 18px 18px;
