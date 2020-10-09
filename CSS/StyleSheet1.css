@@ -139,7 +139,7 @@ a {
 }
 
 audio {
-    min-width: 23vw;
+    min-width: 18vw;
 }
 
 
@@ -172,7 +172,10 @@ audio {
     max-width: 3vw;
 }
 
-
+.h_centered {
+    justify-content: center;
+    align-items: center;
+}
 
 .twocolumngridcontainer {
     display: grid;
@@ -236,7 +239,7 @@ audio {
 }
 
 .medmar {
-    margin: 6px;
+    margin: 1vw;
 }
 
 .nomar {
@@ -256,6 +259,14 @@ audio {
 }
 
 
+
+.txtxxhuge {
+    font-size: 72px;
+}
+
+.txtxhuge {
+    font-size: 56px;
+}
 
 .txthuge {
     font-size: xx-large;
@@ -286,7 +297,7 @@ audio {
 }
 
 .txtindent {
-    text-indent: -4em;
+    text-indent: -4rem;
     padding: 72px;
     padding-top: 0px;
 }
