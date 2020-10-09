@@ -2,6 +2,8 @@
     font-size: xx-large;
     font-weight: bolder;
     border: 12px outset #939393;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
     box-shadow: rgba(0, 0, 0, .4) 9px 9px 9px, rgba(0, 0, 0, .4) -9px -9px 9px;
 }
 
@@ -75,8 +77,10 @@
     display: flex;
     flex-direction: row;
     color: #a6a6a6;
-    background-color: #0f0f0f;
+    background-color: #212121;
     border: 6px outset #424242;
+    border-bottom-left-radius: 1vmin;
+    border-bottom-right-radius: 1vmin;
     clear: both;
     box-shadow: rgba(0, 0, 0, .4) 9px 9px 9px, rgba(0, 0, 0, .4) -9px -9px 9px;
 }
@@ -96,7 +100,8 @@
 
 .button {
     background-color: #424242;
-    border: 3px inset #939393;
+    border: .42vmin inset #939393;
+    border-radius: .72vmin;
     color: #eaeaea;
     font-weight: 400;
     text-align: start;
@@ -340,6 +345,15 @@ audio {
 }
 
 
+
+.std_border {
+    border: 1vmin inset #636363;
+    border-radius: 1vmin;
+}
+
+.std_border_sharp {
+    border: 1vmin inset #636363;
+}
 
 .noborder {
     border: none;
