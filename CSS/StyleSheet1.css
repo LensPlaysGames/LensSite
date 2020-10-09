@@ -108,7 +108,7 @@
     display: inline-block;
     max-width: 100%;
     box-shadow: rgba(0, 0, 0, .4) 9px 9px 9px, rgba(0, 0, 0, .4) -9px -9px 9px;
-    transition-duration: .4s;
+    transition-duration: .42s;
 }
 
     .button:hover {
@@ -117,11 +117,13 @@
 
 .buttonnoresize {
     background-color: #424242;
-    border: 3px inset #939393;
+    border: .42vmin inset #939393;
+    border-radius: .72vmin;
     color: #eaeaea;
     font-weight: normal;
     text-align: start;
     display: inline-block;
+    transition-duration: .42s;
 }
 
     .buttonnoresize:hover {

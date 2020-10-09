@@ -1,14 +1,12 @@
 ﻿//Strain Names Init
-var names = ['GG#4', 'Sour Diesel', 'Legends'];
-
-ReadFile();
-function ReadFile() {
-    fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); })
-}
-
-
+var names = ["GG#4", "Sour Diesel", "Legends", "Green Thumb", "Killer Kongo", "Dragon-Fire", "Lhea"];
 
 $(function () {
+    ReadFile();
+    function ReadFile() {
+        fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); })
+    }
+
     var nametext = $("#strainname");
     var image = $("#strainimg");
 
@@ -48,6 +46,7 @@ $(function () {
 });
 
 
+var last_index;
 
 function GenerateName() {
     var name = '';
@@ -58,10 +57,12 @@ function GenerateName() {
 
     // 50% Chance to add a cross-breed
     var rand = Math.floor((Math.random() * names.length * 2) - names.length);
+    if (rand == index) { rand = Math.floor((Math.random() * names.length * 2) - names.length); }
     if (rand >= 0) { name += " x " + names[rand]; }
 
     // 50% chance to add another name before current name
     var randprime = Math.floor((Math.random() * names.length * 2) - names.length);
+    if (randprime == index || randprime == rand) { randprime = Math.floor((Math.random() * names.length * 2) - names.length); }
     if (randprime >= 0) { name = names[randprime] + " " + name; }
 
     // Prevent name from being too long
