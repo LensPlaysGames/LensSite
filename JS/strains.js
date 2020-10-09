@@ -4,7 +4,9 @@ var names = ["GG#4", "Sour Diesel", "Legends", "Green Thumb", "Killer Kongo", "D
 $(function () {
     ReadFile();
     function ReadFile() {
-        fetch('weedstrains.txt').then(r => r.text()).then(n => { names = n.split("\r"); })
+        fetch('weedstrains.txt')
+            .then(r => r.text())
+            .then(n => { names = names.concat(n.split("\r")); });
     }
 
     var nametext = $("#strainname");
