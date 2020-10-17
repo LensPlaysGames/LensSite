@@ -1,9 +1,9 @@
 ﻿$(function () {
-    var a = 0;
     var ids_to_change = [
         "#txt_music",
         "#txt_coding",
     ];
+    var a = 0;
 
     function change_colors() {
         a++;
